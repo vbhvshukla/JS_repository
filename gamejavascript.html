@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>JavaScript
+		</title>
+	</head>
+	<body>
+        <p>How many fingers am i holding up? </p> <input id="userinput"></input>
+        <button id="checkinguserinput">Click to Check </button>
+
+
+		<script type="text/JavaScript">
+			document.getElementById("checkinguserinput").onclick = function(){
+				var x = document.getElementById("userinput").value;
+				var magicword = Math.floor((Math.random() * 10) + 1);
+				if (x == magicword) {
+					alert("You've guessed it right");
+				}
+				else {
+					alert("You're wrong have another try number is"+ magicword);
+				}
+			}
+		</script>
+	</body>		
+</html>
